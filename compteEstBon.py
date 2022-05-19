@@ -57,7 +57,7 @@ class Panel:
     # tri des permuations (n1, n2) avec n1 <= n2
     # élimination des doublons
     # ajout des nombres non utilisés dans la permutation ; ajout des chemins ; reconstitution de Panel()
-    # les siblings sont les permutations par 2 des nombre d'un panel
+    # les siblings sont les permutations par 2 des nombres d'un panel
     # pour un panel de nombres donnés par exemple [5,25,6,32] va renvoyer ; [5,25,6,32], [5,6,25,32], [5,32,25,6],[25,6,32,5], [25,32,6,5], [6,32,5,25]. Elimine les doublons.
     def siblings(self):
         siblings = []
@@ -76,6 +76,7 @@ class Panel:
                 sibling.extend(brotherCopy)
                 
                 siblings.append(sibling) 
+                
         ways = [self.way] * len(siblings)
         siblings = list(zip(siblings, ways))
 
@@ -102,6 +103,8 @@ class Panel:
 
         # création des arrays de nombre et des strings qui vont créer les Panel child
         # création de children
+        
+        
         numbersAdd = [addChild[0]]
         numbersAdd.extend(self.numbers[2:])
         wayAdd = "{}\n{}".format(self.way, addChild[1])
