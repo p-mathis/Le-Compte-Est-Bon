@@ -114,7 +114,6 @@ class Panel:
             wayMult = "{}\n{}".format(self.way, multChild[1])
             panelMult = Panel(numbersMult, wayMult)
             children.append(panelMult)
-
         else:
             pass
 
