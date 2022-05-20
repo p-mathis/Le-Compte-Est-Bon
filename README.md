@@ -7,16 +7,25 @@ Le principe de ce jeu est bien connu et [Wikipedia](https://fr.wikipedia.org/wik
 Différentes algorithmes en python sont disponibles sur le web, par exemple :  
 - [Le Compte Sera Bon de Janiko71](https://github.com/janiko71/le-compte-sera-bon)
 - [Le Compte Est Bon de hbouia](https://codes-sources.commentcamarche.net/source/103323-le-compte-est-bon)  
+- [Compte est bon Nombre.py de Python-2018](https://github.com/MarcPartensky/Python-2018/blob/master/Compte%20est%20bon%20Nombre.py)
+- [le-compte-est-bon de SamuelDSR](https://github.com/SamuelDSR/le-compte-est-bon)
+- [leComteEstBon de halftermeyer](https://github.com/halftermeyer/leCompteEstBon)
+- [calculator.py de ychaouche](https://gist.github.com/ychaouche/2944228)
+- [jupyter de n3times](https://github.com/n3times/jupyter/blob/master/Le%20compte%20est%20bon.ipynb)
+- [Le Compte est bon en Python de Christophe Boilley](https://boilley.ovh/blog/bon-compte.html)
 
 Également disponible, un solveur en ligne : [dCode](https://www.dcode.fr/compte-est-bon)
 ## Principe de l'Algorithme
 - Tester toutes les solutions possibles pour un tirage donné
 - Simplifier le test et augmenter la rapidité en éliminant les doublons
+- Créer une classe Panel qui comporte deux variables d'instance : 
+  * la variable numbers, collection de nombre
+  * la variable way, string décrivant les différentes opérations pour calculer un nombre
 - Utiliser une fonction récursive
 - On peut décider des valeurs des plaques et de la cible ou les tirer de manière aléatoire
 ## Résultats
 - Toutes les solutions possibles sont testées dans un délai de l'ordre de 3 secondes (dépendant de la vitesse du processeur)
-- Le nombre de solutions testées est variable, de l'ordre du million
+- Le nombre de solutions testées est variable, dépendant du nombre de doublons, de l'ordre du million
 - La première solution exacte, si elle existe, est, le plus souvent, trouvée en quelques millisecondes
 - Une fonction printResults affiche le nombre de solutions testées, la première solution trouvée (solution exacte ou solution la plus proche).
 - Notons que des valeurs supérieures à 1000 peuvent être cherchées.
