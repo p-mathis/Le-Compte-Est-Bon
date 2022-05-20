@@ -177,7 +177,7 @@ class Panel:
             print(f'il existe au moins une solution exacte : {firstSolPanel.numbers}{firstSolPanel.way}')
             
             #notation pour avoir des millisecondes lisibles ; voir https://stackoverflow.com/questions/658763/how-to-suppress-scientific-notation-when-printing-float-values
-            print(f'première solution exacte trouvée en {((first - start)/1000):.20f} millisecondes')
+            print(f'première solution exacte trouvée en {((first - start)*1000):.20f} millisecondes')
    
             print(f'nombre de solutions exactes testées : {len(solutions)}')
             
