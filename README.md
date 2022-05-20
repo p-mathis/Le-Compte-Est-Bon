@@ -39,7 +39,7 @@ Différentes algorithmes en python sont disponibles sur le web, par exemple :
     10 - 1 = 9
     9 x 80 = 720
     720 - 100 = 620
-    première solution exacte trouvée en 0.00000946688652038574 millisecondes
+    première solution exacte trouvée en 1.53446197509765625000 millisecondes
     nombre de solutions exactes testées : 199
 ## ToDo
 - Fenêtre d'option : aléatoire ou non
